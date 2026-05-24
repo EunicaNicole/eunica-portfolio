@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfbfe;
-  --foreground: #09090b;
-  --accent: #3b82f6;
+  --background: #fdfaf6;
+  --foreground: #1a202c;
 }
 
 @theme inline {
@@ -11,15 +10,14 @@
   --color-foreground: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030303;
-    --foreground: #f4f4f5;
-  }
+body {
+  background: linear-gradient(135deg, #fcebe0 0%, #f4f6f4 50%, #dcf0e9 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
 }
 
-html { scroll-behavior: smooth; }
-body {
-  background: var(--background);
-  color: var(--foreground);
+/* Para sa mas makinis na text */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
