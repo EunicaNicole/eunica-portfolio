@@ -1,12 +1,9 @@
 import "./globals.css";
-import { Inter, Playfair_Display } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Person.search | MCP App",
-  description: "Manage Person records with Claude MCP",
+  title: "Person.search | MCP Tool",
+  description: "Manage Person records directly in-app.",
 };
 
 export default function RootLayout({
@@ -15,8 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
-      <body className="min-h-full font-sans text-gray-800">
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full bg-zinc-50 text-zinc-900">
+        <Navbar />
         {children}
       </body>
     </html>
