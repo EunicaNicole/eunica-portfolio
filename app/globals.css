@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfaf6;
-  --foreground: #1a202c;
+  --background: #FFE5EC;
+  --foreground: #18181b; /* Dark zinc for readability */
 }
 
 @theme inline {
@@ -11,13 +11,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #fcebe0 0%, #f4f6f4 50%, #dcf0e9 100%);
+  background: linear-gradient(135deg, #FFE5EC 0%, #FFC2D1 100%);
   background-attachment: fixed;
   color: var(--foreground);
-}
-
-/* Para sa mas makinis na text */
-* {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
